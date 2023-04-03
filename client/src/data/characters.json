@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Bill",
+        "type": "npc",
+        "description": "this is a description. {{this opens jane|c|2}}. whereas {{this opens anuj|c|3}}",
+        "icon": "123.png"
+
+    },
+    {
+        "id": 2,
+        "name": "Jane",
+        "type": "npc",
+        "description": "this is a description. {{<br />}}{{this opens bill|c|1}}",
+        "icon": "123.png"
+
+    },
+    {
+        "id": 3,
+        "name": "Anuj",
+        "alias": "Anuj",
+        "type": "player",
+        "description": "Part of the {{City Guards|f|4}}",
+        "icon": "123.png"
+    }
+
+]

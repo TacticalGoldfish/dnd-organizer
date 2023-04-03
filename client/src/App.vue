@@ -1,60 +1,101 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+    <v-main>    
+      <v-stepper v-model="selectedStep">
+        <v-stepper-header>
+          <template v-for="n, i in steps">
+            <v-divider
+              v-if="i > 0"
+              :key="n.id"
+            ></v-divider>
+            <v-stepper-step
+              v-if="true"
+              :key="`${n.id}-step`"
+              :complete="selectedStep > n.id"
+              :step="n.id"
+              editable
+            >
+              Step {{ n.title }}
+            </v-stepper-step>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
+          </template>
+        </v-stepper-header>
 
-      <v-spacer></v-spacer>
+        <v-stepper-items>
+          <v-stepper-content
+            v-for="n in steps"
+            :key="`${n.id}-content`"
+            :step="n.id"
+          >
+            <v-card
+              class="mb-12"
+            > 
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-main>
-      <HelloWorld/>
+              <faction-list ref="factionList" @switchModule="(module, id) => switchModule(module, id)" v-if="n.shortcut == 'f'" />
+              <character-list ref="characterList" @switchModule="(module, id) => switchModule(module, id)" v-if="n.shortcut == 'c'"/>
+            </v-card>
+          </v-stepper-content>
+        </v-stepper-items>
+      </v-stepper>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import CharacterList from './components/CharacterList';
+import FactionList from './components/FactionList';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    CharacterList,
+    FactionList,
+  },
+  created() {
+    this.init();
   },
 
   data: () => ({
-    //
+    selectedStep: 1,
+    steps: [
+      {
+        id: 1,
+        title: 'Characters',
+        shortcut: 'c',
+      },
+      {
+        id: 2,
+        title: 'Factions',
+        shortcut: 'f',
+      }
+    ],
+    selectedModule: 1,
   }),
+
+watch: {
+},
+  methods: {
+    init() {
+      this.$vuetify.theme.dark = true;
+    },
+    switchModule(module, id) {
+      const selectedModule = this.steps.find(x => x.shortcut == module);
+      if(selectedModule) {
+        this.selectedStep = selectedModule.id;
+        switch(module) {
+          case 'c':
+            this.$refs.characterList[0].openDetails(module, id);
+            break;
+          case 'f': 
+            this.$refs.factionList[0].openDetails(module, id);
+            break;
+          default:
+            break;
+        }
+
+      }
+    },
+  }
 };
 </script>

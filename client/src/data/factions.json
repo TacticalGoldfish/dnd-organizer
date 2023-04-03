@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Royalty",
+        "description": "not much is known",
+        "icon": "123.png"
+    },
+    {
+        "id": 2,
+        "name": "Nobles",
+        "description": "We only know about Duke Ostelott",
+        "icon": "123.png"
+    },
+    {
+        "id": 3,
+        "name": "Royal Guards",
+        "description": "These are the nobility and knights that protect the king, and manage the Royal District",
+        "icon": "123.png"
+    },
+    {
+        "id": 4,
+        "name": "City Guard",
+        "description": "Player Members: {{<br />}} {{this opens Anuj|c|3}}",
+        "icon": "123.png"
+    }
+
+]
