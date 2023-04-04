@@ -45,7 +45,7 @@
 //import CharacterList from './components/CharacterList';
 //import FactionList from './components/FactionList';
 import DynamicEntryList from './components/DynamicEntryList';
-import modules from '@/data/modules'
+//import modules from '@/data/modules'
 
 export default {
   name: 'App',
@@ -59,12 +59,18 @@ export default {
 
   data: () => ({
     selectedStep: 1,
-    modules: modules,
+    
     selectedModule: 1,
   }),
+  computed: {
+    modules() {
+      if(this.$modules) return this.$modules;
+      return [];
+    }
+  },
 
-watch: {
-},
+  watch: {
+  },
   methods: {
     init() {
       this.$vuetify.theme.dark = true;

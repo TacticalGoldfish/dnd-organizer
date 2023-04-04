@@ -25,7 +25,7 @@
       @openDetails="(moduleShortcut, id) => openDetails(moduleShortcut, id)"/>
   </v-col>
   <br v-else-if="element.type == 'newLine'" />
-  <v-img v-else-if="element.type == 'image'" :src="require(`@/assets/${element.source}`)" :height="element.height" :contain="element.contain ? element.contain : false" />
+  <v-img v-else-if="element.type == 'image'" :src="`./img/${element.source}`" :height="element.height" :contain="element.contain ? element.contain : false" />
 </template>
 
 <script>
