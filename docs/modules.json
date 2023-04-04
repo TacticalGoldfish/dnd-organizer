@@ -193,6 +193,21 @@
                                 "class": "",
                                 "style": "text-align: start;",
                                 "text": "",
+                                "cols": "2",
+                                "children": [
+                                    {
+                                        "type": "image",
+                                        "source": "token_eben.png",
+                                        "height": "200px",
+                                        "contain": true
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "column",
+                                "class": "",
+                                "style": "text-align: start;",
+                                "text": "",
                                 "cols": "5",
                                 "children": [
                                     {
