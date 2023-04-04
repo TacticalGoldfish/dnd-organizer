@@ -12,18 +12,7 @@
             </v-expansion-panel-header>
             <v-expansion-panel-content>
               <template v-for="element, ei in entry.contents" >
-                <!--<span v-if="element.type == 'span'" :key="`c-${ci}-ds-${ei}`">
-                  {{ element.text }}
-                </span>
-                <a 
-                  v-else-if="element.type == 'a'" 
-                  :key="`c-${ci}-da-${ei}`"
-                  @click="openDetails(element.module, element.id)">
-                  {{ element.text }}
-
-                </a>
-                <br v-else-if="element.type == 'nl'" :key="`c-${ci}-dnl-${ei}`" />-->
-                <DynamicElement :element="element" :layer="1" :key="`element-${ei}`" v-if="true" @openDetails="(moduleShortcut, id) => openDetails(moduleShortcut, id)" />
+                <DynamicElement :element="element" :layer="1" :key="`${element.type}-element-${ei}-layer-0`" v-if="true" @openDetails="(moduleShortcut, id) => openDetails(moduleShortcut, id)" />
               </template>
             </v-expansion-panel-content>
           </v-expansion-panel>

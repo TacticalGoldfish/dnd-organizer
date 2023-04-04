@@ -11,17 +11,17 @@
       v-for="child, chi in element.children" 
       :element="child" 
       :layer="layer + 1" 
-      :key="`element-${chi}-layer-${layer}`" 
+      :key="`${child.type}-element-${chi}-layer-${layer}`" 
       @openDetails="(moduleShortcut, id) => openDetails(moduleShortcut, id)"
        />
   </v-row>
-  <v-col v-else-if="element.type == 'column'" :cols="element.cols" :style="element.style ? element.style : ''" :class="element.class ? element.class : ''">
+  <v-col v-else-if="element.type == 'column'" :lg="element.colslg" :md="element.colsmd" :sm="element.colssm" :xs="element.colsxs" :cols="element.cols" :style="element.style ? element.style : ''" :class="element.class ? element.class : ''" >
     {{ element.text ? element.text : '' }}
     <DynamicElement 
       v-for="child, chi in element.children" 
       :element="child" 
       :layer="layer + 1" 
-      :key="`element-${chi}-layer-${layer}`"  
+      :key="`${child.type}-element-${chi}-layer-${layer}`"  
       @openDetails="(moduleShortcut, id) => openDetails(moduleShortcut, id)"/>
   </v-col>
   <br v-else-if="element.type == 'newLine'" />
