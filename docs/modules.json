@@ -197,7 +197,7 @@
                                 "children": [
                                     {
                                         "type": "image",
-                                        "source": "token_eben.png",
+                                        "source": "duke-ostelott-token.png",
                                         "height": "200px",
                                         "contain": true
                                     }
