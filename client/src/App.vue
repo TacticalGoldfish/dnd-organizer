@@ -3,19 +3,19 @@
     <v-main>    
       <v-stepper v-model="selectedStep">
         <v-stepper-header>
-          <template v-for="n, i in steps">
+          <template v-for="module, i in modules">
             <v-divider
               v-if="i > 0"
-              :key="n.id"
+              :key="module.id"
             ></v-divider>
             <v-stepper-step
               v-if="true"
-              :key="`${n.id}-step`"
-              :complete="selectedStep > n.id"
-              :step="n.id"
+              :key="`${module.id}-step`"
+              :complete="selectedStep > module.id"
+              :step="module.id"
               editable
             >
-              Step {{ n.title }}
+              {{ module.title }}
             </v-stepper-step>
 
           </template>
@@ -23,16 +23,16 @@
 
         <v-stepper-items>
           <v-stepper-content
-            v-for="n in steps"
-            :key="`${n.id}-content`"
-            :step="n.id"
+            v-for="module in modules"
+            :key="`${module.id}-content`"
+            :step="module.id"
           >
             <v-card
               class="mb-12"
             > 
-
-              <faction-list ref="factionList" @switchModule="(module, id) => switchModule(module, id)" v-if="n.shortcut == 'f'" />
-              <character-list ref="characterList" @switchModule="(module, id) => switchModule(module, id)" v-if="n.shortcut == 'c'"/>
+              <dynamic-entry-list :module="module" :ref="`${module.shortcut}-module`" @switchModule="(moduleShortcut, id) => switchModule(moduleShortcut, id)" />
+              <!--<faction-list ref="factionList" @switchModule="(module, id) => switchModule(module, id)" v-if="n.shortcut == 'f'" />
+              <character-list ref="characterList" @switchModule="(module, id) => switchModule(module, id)" v-if="n.shortcut == 'c'"/>-->
             </v-card>
           </v-stepper-content>
         </v-stepper-items>
@@ -42,15 +42,16 @@
 </template>
 
 <script>
-import CharacterList from './components/CharacterList';
-import FactionList from './components/FactionList';
+//import CharacterList from './components/CharacterList';
+//import FactionList from './components/FactionList';
+import DynamicEntryList from './components/DynamicEntryList';
+import modules from '@/data/modules'
 
 export default {
   name: 'App',
 
   components: {
-    CharacterList,
-    FactionList,
+    DynamicEntryList
   },
   created() {
     this.init();
@@ -58,18 +59,7 @@ export default {
 
   data: () => ({
     selectedStep: 1,
-    steps: [
-      {
-        id: 1,
-        title: 'Characters',
-        shortcut: 'c',
-      },
-      {
-        id: 2,
-        title: 'Factions',
-        shortcut: 'f',
-      }
-    ],
+    modules: modules,
     selectedModule: 1,
   }),
 
@@ -79,21 +69,11 @@ watch: {
     init() {
       this.$vuetify.theme.dark = true;
     },
-    switchModule(module, id) {
-      const selectedModule = this.steps.find(x => x.shortcut == module);
-      if(selectedModule) {
+    switchModule(moduleShortcut, id) {
+      const selectedModule = this.modules.find(x => x.shortcut == moduleShortcut);
+      if(selectedModule && this.$refs[`${moduleShortcut}-module`] && this.$refs[`${moduleShortcut}-module`][0]) {
         this.selectedStep = selectedModule.id;
-        switch(module) {
-          case 'c':
-            this.$refs.characterList[0].openDetails(module, id);
-            break;
-          case 'f': 
-            this.$refs.factionList[0].openDetails(module, id);
-            break;
-          default:
-            break;
-        }
-
+        this.$refs[`${moduleShortcut}-module`][0].openDetails(moduleShortcut, id)
       }
     },
   }
