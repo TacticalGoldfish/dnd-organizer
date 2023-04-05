@@ -40,23 +40,6 @@
                                 "style": "text-align: start;",
                                 "text": "",
                                 "cols": "12",
-                                "colslg": "2",
-                                "colsmd": "6",
-                                "children": [
-                                    {
-                                        "type": "image",
-                                        "source": "token_hordor.png",
-                                        "height": "200px",
-                                        "contain": true
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "column",
-                                "class": "",
-                                "style": "text-align: start;",
-                                "text": "",
-                                "cols": "12",
                                 "colslg": "5",
                                 "colsmd": "6",
                                 "children": [
