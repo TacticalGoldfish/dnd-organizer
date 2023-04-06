@@ -85,3 +85,8 @@ export default {
   }
 };
 </script>
+<style>
+  .v-stepper__step__step {
+    display: none !important;
+  }
+</style>

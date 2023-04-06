@@ -163,17 +163,18 @@
         }
         const image = new window.Image();
         image.src = `./img/${this.element.source}`;
-        const aspectRatio = container.offsetParent.offsetWidth / image.width;
-
-        const height = image.height * aspectRatio;
-        const width = container.offsetWidth;
-        image.width = width;
-        image.height = height;
-
-        this.stageSize.width = width;
-        this.stageSize.height = height;
         image.onload = () => {
+          const aspectRatio = container.offsetParent.offsetWidth / image.width;
+
+          const height = image.height * aspectRatio;
+          const width = container.offsetWidth;
+          image.width = width;
+          image.height = height;
+
+          this.stageSize.width = width;
+          this.stageSize.height = height;
           this.image = image;
+          
         };
       },
       handleMouseEnter(e) {
