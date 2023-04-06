@@ -2,9 +2,9 @@
   <v-container>
     <v-row class="text-center">
       <v-col cols="12">
-        <v-expansion-panels v-if="module && module.entries" v-model="selectedEntry" value="id">
+        <v-expansion-panels v-if="module && entries" v-model="selectedEntry" value="id">
           <v-expansion-panel
-            v-for="(entry,ci) in module.entries"
+            v-for="(entry,ci) in entries"
             :key="`c-${ci}`"
           >
             <v-expansion-panel-header>
@@ -31,13 +31,31 @@
       DynamicElement
     },
     data: () => ({
-      selectedEntry: null
+      selectedEntry: null,
+      entries: [],
     }),
     props: {
       module: {
         type: Object,
         default: () => {},
       }
+    },
+    watch: {
+      module: {
+        immediate: true,
+        handler(val){
+          if (!val) return;
+          if(typeof this.module.entries == "string") {
+            this.fetchEntryJson().then((res) => {
+              this.entries = res;
+            } );
+          } else if (typeof this.module.entries == "object") {
+            this.entries = [...this.module.entries];
+          }
+        },
+      }
+    },
+    computed: {
     },
     methods: {
       unpackDescription(description){
@@ -46,12 +64,20 @@
       },
       openDetails(moduleShortcut, id){
         if(moduleShortcut == this.module.shortcut) {
-          const index = this.module.entries.findIndex(x => x.id == id);
+          console.log(this.module)
+          const index = this.entries.findIndex(x => x.id == id);
           this.selectedEntry = index;
         } else {
           this.$emit('switchModule', moduleShortcut, id);
         }
 
+      },
+      async fetchEntryJson() {
+        const response = await fetch(`/${this.module.entries}`);
+        const file = await response.json();
+        return file;
+        // const baseUrl = process.env.BASE_URL;
+        // return await this.someHttpClient.get(`${ baseUrl }/${this.module.entries}`);
       }
     }
   }
