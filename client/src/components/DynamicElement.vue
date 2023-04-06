@@ -34,7 +34,7 @@
       <Konva-layer ref="layer">
        
         <Konva-image :config="{
-              image: image
+              image: computedImage
             }" :src="`./img/${element.source}`" :height="element.height" :contain="element.contain ? element.contain : false"/> 
         <template v-if="element.xyGrid && element.xyGrid.length == 2">
           <Konva-line
@@ -119,6 +119,11 @@
       },
       image: null,
     }),
+    computed: {
+      computedImage() {
+        return this.image
+      } 
+    },
     props: {
       element: {
         type: Object,
@@ -170,6 +175,7 @@
         this.stageSize.width = width;
         this.stageSize.height = height;
         image.onload = () => {
+          this.$set()
           this.image = image;
         };
       },
