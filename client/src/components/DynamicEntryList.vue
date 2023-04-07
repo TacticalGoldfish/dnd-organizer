@@ -92,7 +92,7 @@
       },
       getAllText(entry) {
         let allText =  '';
-        entry?.children.forEach(child => {
+        entry?.children?.forEach(child => {
           allText += child.text ? ` ${child.text}` : '';
           if(child.children != null) allText += ` ${this.getAllText(child)}`
         });
