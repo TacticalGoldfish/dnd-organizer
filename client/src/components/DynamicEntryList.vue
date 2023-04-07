@@ -1,8 +1,24 @@
 <template>
   <v-container>
     <v-row class="text-center">
-      <v-col cols="12">
-        <v-text-field hint="search..." v-model="searchText"></v-text-field>
+      <v-col cols="12" lg="3" sm="6">
+        <v-text-field hide-details v-if="module.searchBar" label="search..." v-model="searchText" outlined dense></v-text-field>
+      </v-col>
+      <v-col cols="12" lg="3" sm="6">
+        <v-select 
+          v-if="module.filters && module.filters.some(x => x == 'type')" 
+          v-model="selectedTypes" 
+          :items="types" 
+          multiple
+          chips
+          dense
+          label="types..." 
+          outlined
+        >
+          <template #selection="{ item }">
+          <v-chip small>{{item}}</v-chip>
+        </template>
+        </v-select>
       </v-col>
       <v-col cols="12">
         <v-expansion-panels v-if="module && entries" v-model="selectedEntry" value="id">
@@ -37,6 +53,7 @@
       selectedEntry: null,
       entries: [],
       searchText: '',
+      selectedTypes: [],
     }),
     props: {
       module: {
@@ -51,9 +68,11 @@
           if (!val) return;
           if(typeof this.module.entries == "string") {
             this.fetchEntryJson().then((res) => {
-              res.forEach(entry => {
-                entry.allText = this.getAllText(entry);
-              });
+              if(val.searchBar) {
+                res.forEach(entry => {
+                  entry.allText = this.getAllText(entry);
+                });
+              }
               this.entries = res;
             } );
           } else if (typeof this.module.entries == "object") {
@@ -65,7 +84,14 @@
     computed: {
       filteredEntries() {
         const lowcaseSearch = this.searchText.toLowerCase()
-        return this.entries.filter(x => x.type?.toLowerCase().includes(lowcaseSearch) || x.name?.toLowerCase().includes(lowcaseSearch) || x.alias?.toLowerCase().includes(lowcaseSearch) || x.allText ?.toLowerCase().includes(lowcaseSearch))
+        return this.entries.filter(x => (this.selectedTypes.length == 0 || this.selectedTypes.some(type => type == x.type)) && (x.type?.toLowerCase().includes(lowcaseSearch) || x.name?.toLowerCase().includes(lowcaseSearch) || x.alias?.toLowerCase().includes(lowcaseSearch) || x.allText ?.toLowerCase().includes(lowcaseSearch)))
+      },
+      types() {
+        let types = [];
+        this.entries.forEach(entry => {
+          if(types.indexOf(entry.type) == -1) types.push(entry.type);
+        })
+        return types;
       }
     },
     methods: {
@@ -75,6 +101,7 @@
       },
       openDetails(moduleShortcut, id){
         if(moduleShortcut == this.module.shortcut) {
+          this.searchText = ''
           console.log(this.module)
           const index = this.entries.findIndex(x => x.id == id);
           this.selectedEntry = index;

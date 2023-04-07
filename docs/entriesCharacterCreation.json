@@ -375,6 +375,18 @@
                                 "class": "",
                                 "style": "",
                                 "text": "Play around with it and try to mix-and-match your class, race, and background. Don't look too deeply into the mechanical details of each one (unless you really want to min-max)."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "As you narrow down your options or make a final choice on your class/race/background, take note of it, and save the link for the page with the details - you will be referring to it later."
                             }
                         ]
                     }
@@ -889,7 +901,7 @@
                                 "type": "span",
                                 "class": "",
                                 "style": "",
-                                "text": "By now you know your character. You know what they've been through, and you know what they've become. Now let's take a closer look at who they are, and what they can be."
+                                "text": "By now you know your character. You know what they've been through, and you know what they've become. Now let's take a closer look at who they are, and what they might become in the future."
                             },
                             {
                                 "type": "newLine"
@@ -910,7 +922,7 @@
                                 "type": "span",
                                 "class": "",
                                 "style": "",
-                                "text": " - Did you pick the Dragonborn race? Then it turns out that you have dragon breath as a weapon that you cn use."
+                                "text": " - Did you pick the Dragonborn race? Then it turns out that you have dragon breath as a weapon that you can use."
                             },
                             {
                                 "type": "newLine"
@@ -971,6 +983,18 @@
                                 "class": "",
                                 "style": "",
                                 "text": "In this layer, we simply write down all of the details that came with our selections. Normally, you're trying to do this while also trying to decide on your character's class/race/background, this part can become overwhelming. Luckily, if you've followed the previous layers, you don't need to worry anymore."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Note: despite the work you've done, this layer is pretty technical and not easy if you've never played D&D before. Feel free to reach out to your DM and have them help you - tell them the choices you've mad up until now, and they can help you fill this sheet out."
                             },
                             {
                                 "type": "newLine"

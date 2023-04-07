@@ -1,7 +1,10 @@
 <template>
+  <!--spans and anchors-->
   <span v-if="element.type == 'span'" :style="element.style ? element.style : ''" :class="element.class ? element.class : ''">{{ element.text }}</span>
   <a v-else-if="element.type == 'anchor' && element.targetModule" :style="element.style ? element.style : ''" :class="element.class ? element.class : ''" @click.prevent="openDetails(element.targetModule, element.targetId)">{{ element.text }}</a>
   <a v-else-if="element.type == 'anchor' && element.href" :style="element.style ? element.style : ''" :class="element.class ? element.class : ''" :href="element.href" target="_blank" >{{ element.text }}</a>
+  
+  <!--row layout-->
   <v-row v-else-if="element.type == 'row'" :style="element.style ? element.style : ''" :class="element.class ? element.class : ''">
     {{ element.text ? element.text : '' }}
     <DynamicElement 
@@ -12,6 +15,7 @@
       @openDetails="(moduleShortcut, id) => openDetails(moduleShortcut, id)"
        />
   </v-row>
+  <!--column layout-->
   <v-col v-else-if="element.type == 'column'" :lg="element.colslg" :md="element.colsmd" :sm="element.colssm" :xs="element.colsxs" :cols="element.cols" :style="element.style ? element.style : ''" :class="element.class ? element.class : ''" >
     {{ element.text ? element.text : '' }}
     <DynamicElement 
@@ -22,16 +26,18 @@
       @openDetails="(moduleShortcut, id) => openDetails(moduleShortcut, id)"/>
   </v-col>
   <br v-else-if="element.type == 'newLine'" />
+
+  <!--basic image-->
+  <v-img v-else-if="element.type == 'image'" :src="`./img/${element.source}`" :height="element.height" :contain="element.contain ? element.contain : false" />
+
   
-  <div v-else-if="element.type == 'map'" v-bind:style="{ height: '100%', width: '100%' }" style="justify-content: center; display: flex;" ref="container">
+  <!--map - will only show if grid details are set-->
+  <div v-else-if="element.type == 'map' && element.xyGrid && element.xyGrid.length == 2" v-bind:style="{ height: '100%', width: '100%' }" style="justify-content: center; display: flex;" ref="container">
     <Konva-stage ref="stage" :config="stageSize">
-      <Konva-layer v-if="element.xyGrid && element.xyGrid.length == 2" ref="gridLayer">
-      </Konva-layer>
-      
-      <Konva-layer ref="layer">
-       
+      <Konva-layer ref="gridLayer">
         <Konva-image :config="imageConfig" :src="`./img/${element.source}`" :height="element.height" :contain="element.contain ? element.contain : false"/> 
-        <template v-if="element.xyGrid && element.xyGrid.length == 2">
+        <!--set up the grid-->
+        <template>
           <Konva-line
             v-for="n in (element.xyGrid[0] + 1)"
             :key="`element-${element.type}-layer-${layer}-vert-${n}`"
@@ -50,49 +56,64 @@
               stroke: `${element.xyGridColor}`,
             }"
           />
-          <template v-if="element.pins">
-            <Konva-label 
-              v-for="pin, n in element.pins"
-              :key="`element-${element.type}-layer-${layer}-pin-${n}`"
-              @pointerclick="openDetails(pin.targetModule, pin.targetId)"
-              @mouseenter="handleMouseEnter"
-              @mouseleave="handleMouseLeave"
+        </template>
+        <!--set up pins if necessary-->
+        <template v-if="element.pins">
+          <Konva-label 
+            v-for="pin, n in element.pins"
+            :key="`element-${element.type}-layer-${layer}-pin-${n}`"
+            @pointerclick="openDetails(pin.targetModule, pin.targetId)"
+            @mouseenter="handleMouseEnter"
+            @mouseleave="handleMouseLeave"
+            :config="{
+              x: (stageSize.width / element.xyGrid[0] * pin.x),
+              y: (stageSize.height / element.xyGrid[1] * pin.y),
+              opacity: 0.75
+            }"
+          >
+            <Konva-tag 
               :config="{
-                x: (stageSize.width / element.xyGrid[0] * pin.x),
-                y: (stageSize.height / element.xyGrid[1] * pin.y),
-                opacity: 0.75
-              }"
-            >
-              <Konva-tag 
-                :config="{
-                  fill: 'black',
-                  pointerDirection: 'down',
-                  pointerWidth: 10,
-                  pointerHeight: 10,
-                  lineJoin: 'round',
-                  shadowColor: 'black',
-                  shadowBlur: 10,
-                  shadowOffset: 10,
-                  shadowOpacity: 0.5,
-                }" 
-              />
-              <Konva-text 
-                :config="{
-                text: pin.text,
-                fontFamily: 'Calibri',
-                fontSize: 18,
-                padding: 5,
-                fill: 'white',
-              }" />
-            </Konva-label>
-          </template>
+                fill: 'black',
+                pointerDirection: 'down',
+                pointerWidth: 10,
+                pointerHeight: 10,
+                lineJoin: 'round',
+                shadowColor: 'black',
+                shadowBlur: 10,
+                shadowOffset: 10,
+                shadowOpacity: 0.5,
+              }" 
+            />
+            <Konva-text 
+              :config="{
+              text: pin.text,
+              fontFamily: 'Calibri',
+              fontSize: 18,
+              padding: 5,
+              fill: 'white',
+            }" />
+          </Konva-label>
+        </template>
+        <!--set up polygons necessary-->
+        <template v-if="element.polygons">
+          <Konva-line
+            v-for="polygon, index in element.polygons"
+            :key="`element-${element.type}-layer-${layer}-polygon-${index}`"
+            :config="{
+              points: calculatePolygonPoints(polygon),
+              strokeWidth: 1,
+              stroke: `${polygon.strokeColor}`,
+              closed: true,
+              x: 0,
+              y: 0,
+              fill: polygon.fillColor
+            }"
+          />
+          
         </template>
       </Konva-layer>
     </Konva-stage>
   </div>
-
-  <v-img v-else-if="element.type == 'image'" :src="`./img/${element.source}`" :height="element.height" :contain="element.contain ? element.contain : false" />
-  
 </template>
 
 <script>
@@ -181,6 +202,19 @@
       handleMouseLeave(e) {
         const stage = e.target.getStage();
         stage.container().style.cursor = "default";
+      },
+      calculatePolygonPoints(polygon) {
+        //[0, (stageSize.height / element.xyGrid[1] * n), stageSize.width, (stageSize.height / element.xyGrid[1] * n)]
+        const width = this.stageSize.width
+        const height = this.stageSize.height
+        const tileWidth = width / this.element.xyGrid[0]
+        const tileHeight = height / this.element.xyGrid[1]
+        let coordinates = [];
+        polygon.points.forEach((coordinate, index) => {
+          if(index % 2) coordinates.push(coordinate * tileHeight); //Y coordinate
+          else coordinates.push(coordinate * tileWidth); //Y coordinate
+        });
+        return coordinates;
       }
     }
   }

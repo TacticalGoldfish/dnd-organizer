@@ -100,7 +100,14 @@
                                 "source": "26x20-tavern.jpg",
                                 "contain": true,
                                 "xyGrid": [26,20],
-                                "xyGridColor": "rgba(0,0,0,0.2)"
+                                "xyGridColor": "rgba(0,0,0,0.2)",
+                                "polygons": [
+                                    {
+                                        "fillColor": "black",
+                                        "strokeColor": "rgba(0,0,0,0.5)",
+                                        "points": [6,2,22,2,22,16,18,16,18,6,13,6,8,8,6,8,6,2]
+                                    }
+                                ]
                             }
                         ]
                     }

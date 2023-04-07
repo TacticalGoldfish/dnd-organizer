@@ -31,8 +31,6 @@
               class="mb-12"
             > 
               <dynamic-entry-list :module="module" :ref="`${module.shortcut}-module`" @switchModule="(moduleShortcut, id) => switchModule(moduleShortcut, id)" />
-              <!--<faction-list ref="factionList" @switchModule="(module, id) => switchModule(module, id)" v-if="n.shortcut == 'f'" />
-              <character-list ref="characterList" @switchModule="(module, id) => switchModule(module, id)" v-if="n.shortcut == 'c'"/>-->
             </v-card>
           </v-stepper-content>
         </v-stepper-items>
@@ -42,10 +40,7 @@
 </template>
 
 <script>
-//import CharacterList from './components/CharacterList';
-//import FactionList from './components/FactionList';
 import DynamicEntryList from './components/DynamicEntryList';
-//import modules from '@/data/modules'
 
 export default {
   name: 'App',
@@ -64,7 +59,7 @@ export default {
   }),
   computed: {
     modules() {
-      if(this.$modules) return this.$modules;
+      if(this.$modules) return this.$modules.filter(x => x.hidden != true);
       return [];
     }
   },

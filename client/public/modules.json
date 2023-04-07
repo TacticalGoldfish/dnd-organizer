@@ -3,12 +3,14 @@
         "id": 1,
         "title": "Characters",
         "shortcut": "c",
+        "searchBar": true,
         "entries": "entriesCharacters.json"
     },
     {
         "id": 2,
         "title": "Factions",
         "shortcut": "f",
+        "searchBar": true,
         "entries": "entriesFactions.json"
     },
     {
@@ -21,12 +23,15 @@
         "id": 4,
         "title": "Market",
         "shortcut": "t",
+        "searchBar": true,
+        "filters": ["type"],
         "entries": "entriesMarket.json"
     },
     {
         "id": 5,
         "title": "Character Creation",
         "shortcut": "cc",
+        "hidden": false,
         "entries": "entriesCharacterCreation.json"
     }
 
