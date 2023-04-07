@@ -16,6 +16,18 @@
         "title": "Maps",
         "shortcut": "m",
         "entries": "entriesMaps.json"
+    },
+    {
+        "id": 4,
+        "title": "Market",
+        "shortcut": "t",
+        "entries": "entriesMarket.json"
+    },
+    {
+        "id": 5,
+        "title": "Character Creation",
+        "shortcut": "cc",
+        "entries": "entriesCharacterCreation.json"
     }
 
 ]

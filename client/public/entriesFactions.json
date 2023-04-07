@@ -2,19 +2,19 @@
     {
         "id": 1,
         "name": "Royalty",
-        "contents": [
+        "children": [
             
         ]
     },
     {
         "id": 2,
         "name": "Nobles",
-        "contents": []
+        "children": []
     },
     {
         "id": 3,
         "name": "Royal Guards",
-        "contents": [
+        "children": [
             {
                 "type": "row",
                 "class": "",
@@ -56,7 +56,7 @@
     {
         "id": 4,
         "name": "City Guard",
-        "contents": [
+        "children": [
             
             {
                 "type": "row",

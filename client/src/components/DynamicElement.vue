@@ -1,10 +1,7 @@
 <template>
-  <span v-if="element.type == 'span'" :style="element.style ? element.style : ''" :class="element.class ? element.class : ''"> 
-    {{ element.text }}
-  </span>
-  <a v-else-if="element.type == 'anchor'" :style="element.style ? element.style : ''" :class="element.class ? element.class : ''" @click.prevent="openDetails(element.targetModule, element.targetId)" >
-    {{ element.text }}
-  </a>
+  <span v-if="element.type == 'span'" :style="element.style ? element.style : ''" :class="element.class ? element.class : ''">{{ element.text }}</span>
+  <a v-else-if="element.type == 'anchor' && element.targetModule" :style="element.style ? element.style : ''" :class="element.class ? element.class : ''" @click.prevent="openDetails(element.targetModule, element.targetId)">{{ element.text }}</a>
+  <a v-else-if="element.type == 'anchor' && element.href" :style="element.style ? element.style : ''" :class="element.class ? element.class : ''" :href="element.href" target="_blank" >{{ element.text }}</a>
   <v-row v-else-if="element.type == 'row'" :style="element.style ? element.style : ''" :class="element.class ? element.class : ''">
     {{ element.text ? element.text : '' }}
     <DynamicElement 

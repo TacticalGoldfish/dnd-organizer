@@ -4,7 +4,7 @@
         "name": "Hordor Lolbrik",
         "alias": "Anuj",
         "type": "Player",
-        "contents": [
+        "children": [
             
             {
                 "type": "row",
@@ -41,7 +41,7 @@
                             {
                                 "type": "span",
                                 "class": "",
-                                "style": "font-weight: bold;",
+                                "style": "",
                                 "text": "Class: "
                             },
                             {
@@ -166,7 +166,7 @@
         "name": "Eben Darrune",
         "alias": "Doom",
         "type": "Player",
-        "contents": [
+        "children": [
             
             {
                 "type": "row",
@@ -322,7 +322,7 @@
         "name": "Saturn Tiberuis Rangler",
         "alias": "Brad",
         "type": "Player",
-        "contents": [
+        "children": [
             
             {
                 "type": "row",
@@ -478,7 +478,7 @@
         "name": "Orion ",
         "alias": "David",
         "type": "Player",
-        "contents": [
+        "children": [
             
             {
                 "type": "row",
@@ -634,7 +634,7 @@
         "name": "Thergrum Deepstone",
         "alias": "",
         "type": "NPC",
-        "contents": [
+        "children": [
             
             {
                 "type": "row",

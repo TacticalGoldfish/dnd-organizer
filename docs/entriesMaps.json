@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Courtak",
         "alias": "City",
-        "contents": [ 
+        "children": [ 
             {
                 "type": "row",
                 "class": "",
@@ -55,7 +55,7 @@
         "id": 2,
         "name": "The Last Manatee",
         "alias": "Pub",
-        "contents": [ 
+        "children": [ 
             {
                 "type": "row",
                 "class": "",
