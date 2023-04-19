@@ -4,7 +4,7 @@
         "name": "Thergrum Deepstone",
         "alias": "",
         "type": "NPC",
-        "children": [
+        "children": [ 
             
             {
                 "type": "row",
