@@ -267,6 +267,12 @@
                                 "text": "- Might be looked down upon by nobility"
                             },
                             {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
                                 "type": "span",
                                 "class": "",
                                 "style": "font-weight: bold;",
