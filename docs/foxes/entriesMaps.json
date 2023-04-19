@@ -1,0 +1,118 @@
+[
+    {
+        "id": 1,
+        "name": "Courtak",
+        "alias": "City",
+        "children": [ 
+            {
+                "type": "row",
+                "class": "",
+                "style": "",
+                "text": "",
+                "children": [
+                    {
+                        "type": "column",
+                        "class": "",
+                        "style": "text-align: start;",
+                        "text": "",
+                        "cols": "12",
+                        "children": [
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Courtac City is the Capital city of the Geles Kingdom."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "map",
+                                "source": "city_courtac.jpg",
+                                "contain": true,
+                                "pins": [
+                                    {
+                                        "targetModule": "m",
+                                        "targetId": "2",
+                                        "text": "The Last Manatee Pub",
+                                        "x": 19.77,
+                                        "y": 8.80
+                                    }
+                                ],
+                                "xyGrid": [29,28],
+                                "xyGridColor": "rgba(0,0,0,0.2)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "The Last Manatee",
+        "alias": "Pub",
+        "children": [ 
+            {
+                "type": "row",
+                "class": "",
+                "style": "",
+                "text": "",
+                "children": [
+                    {
+                        "type": "column",
+                        "class": "",
+                        "style": "text-align: start;",
+                        "text": "",
+                        "cols": "12",
+                        "children": [
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "The Last Manatee is a pub in "
+                            },
+                            {
+                                "type": "anchor",
+                                "targetModule": "m",
+                                "targetId": "1",
+                                "class": "",
+                                "style": "",
+                                "text": " Courtac City "
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": ", and is a popular gathering place among the city guard. It is a family-owned establishment that was founded by a retired captain of the force over a hundred years ago, and has been inherited over several generations."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "map",
+                                "source": "26x20-tavern.jpg",
+                                "contain": true,
+                                "xyGrid": [26,20],
+                                "xyGridColor": "rgba(0,0,0,0.2)",
+                                "polygons": [
+                                    {
+                                        "fillColor": "black",
+                                        "strokeColor": "rgba(0,0,0,0.5)",
+                                        "points": [6,2,22,2,22,16,18,16,18,6,13,6,8,8,6,8,6,2]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
