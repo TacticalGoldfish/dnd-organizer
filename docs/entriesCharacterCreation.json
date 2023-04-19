@@ -950,5 +950,215 @@
                 ]
             }
         ]
+    },
+    {
+        "id": 6,
+        "name": "Ability Score Rolls",
+        "children": [
+            
+            {
+                "type": "row",
+                "class": "",
+                "style": "",
+                "text": "",
+                "children": [
+                    {
+                        "type": "column",
+                        "class": "",
+                        "style": "text-align: start;",
+                        "text": "",
+                        "cols": "12",
+                        "children": [
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Assign your desired ability scores from the following array: 8, 9, 12, 14, 16, 17"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Equipment",
+        "children": [
+            
+            {
+                "type": "row",
+                "class": "",
+                "style": "",
+                "text": "",
+                "children": [
+                    {
+                        "type": "column",
+                        "class": "",
+                        "style": "text-align: start;",
+                        "text": "",
+                        "cols": "12",
+                        "children": [
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "You come equipped with whatever default equipment comes from your class and background."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Starting Gold is whatever you start with based on your class/background. Add 350 gold, and roll for the following amount depending on your class:"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Barbarian: 2d4 x 10gp"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Bard: 5d4 x 10gp"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Cleric: 5d4 x 10gp"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Druid: 2d4 x 10gp"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Fighter: 5d4 x 10gp"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Monk: 5d4"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Paladin: 5d4 x 10gp"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Rogue: 4d4 x 10gp"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Sorcerer: 3d4 x 10gp"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Warlock: 4d4 x 10gp"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Wizard: 4d4 x 10gp"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "If you go for a class outside of the above options, do the following:"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Utility class (alchemist, noble, artisan, etc.): 5d4 x 10gp "
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Combat class (gunner, spellsword, etc.): 4d4 x 10gp "
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Reclusive class (hermit, homeless, etc.): 2d4 x 10gp "
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ]
