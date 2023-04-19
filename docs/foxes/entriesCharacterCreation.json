@@ -1,6 +1,81 @@
 [ 
     
     {
+        "id": 1,
+        "name": "Backstory",
+        "children": [
+            {
+                "type": "row",
+                "class": "",
+                "style": "",
+                "text": "",
+                "children": [
+                    {
+                        "type": "column",
+                        "class": "",
+                        "style": "text-align: start;",
+                        "text": "",
+                        "cols": "12",
+                        "children": [
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Your backstory must include the following two things:"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "1) You have some kind of positive story with "
+                            },
+                            {
+                                "type": "anchor",
+                                "targetModule": "c",
+                                "targetId": "1",
+                                "class": "",
+                                "style": "",
+                                "text": "Thergrum Deepstone"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": ", a noble dwarf who helped you out in some way in the past."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "2) A few years ago you enrolled in the ."
+                            },
+                            {
+                                "type": "anchor",
+                                "targetModule": "f",
+                                "targetId": "3",
+                                "class": "",
+                                "style": "",
+                                "text": "Royal Guard"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " Training Program. Your back story needs to have some kind of motivation that drove that decision."
+                            },
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": 2,
         "name": "Flaw",
         "children": [
