@@ -1154,6 +1154,32 @@
                                 "class": "",
                                 "style": "",
                                 "text": "Reclusive class (hermit, homeless, etc.): 2d4 x 10gp "
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Before starting the campaign, go to the "
+                            },
+                            {
+                                "type": "anchor",
+                                "targetModule": "t",
+                                "targetId": "0",
+                                "class": "",
+                                "style": "",
+                                "text": "Market"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " and spend your gold as you see fit. You can also sell any equipment you don't want, for 50% (+10% per charisma modifier) of its market value "
                             }
                         ]
                     }
