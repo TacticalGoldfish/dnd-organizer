@@ -1,9 +1,9 @@
 [ 
-    
     {
         "id": 1,
-        "name": "Backstory",
+        "name": "How to build your character",
         "children": [
+            
             {
                 "type": "row",
                 "class": "",
@@ -20,8 +20,11 @@
                             {
                                 "type": "span",
                                 "class": "",
-                                "style": "",
-                                "text": "Your backstory must include the following two things:"
+                                "style": "font-weight: bold; font-size: 18px; text-decoration: underline;",
+                                "text": "General Approach"
+                            },
+                            {
+                                "type": "newLine"
                             },
                             {
                                 "type": "newLine"
@@ -30,21 +33,10 @@
                                 "type": "span",
                                 "class": "",
                                 "style": "",
-                                "text": "1) You have some kind of positive story with "
+                                "text": "You're reading this if you are creating a character for the first time, and you're overwhelmed. If that's not the case, get out of here."
                             },
                             {
-                                "type": "anchor",
-                                "targetModule": "c",
-                                "targetId": "1",
-                                "class": "",
-                                "style": "",
-                                "text": "Thergrum Deepstone"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": ", a noble dwarf who helped you out in some way in the past."
+                                "type": "newLine"
                             },
                             {
                                 "type": "newLine"
@@ -53,22 +45,203 @@
                                 "type": "span",
                                 "class": "",
                                 "style": "",
-                                "text": "2) A few years ago you enrolled in the ."
+                                "text": "Let's take it slow. Start with broad strokes, and worry about the small details later. Don't rush, take it easy and try to enjoy the process step by step."
                             },
                             {
-                                "type": "anchor",
-                                "targetModule": "f",
-                                "targetId": "3",
-                                "class": "",
-                                "style": "",
-                                "text": "Royal Guard"
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
                             },
                             {
                                 "type": "span",
                                 "class": "",
                                 "style": "",
-                                "text": " Training Program. Your back story needs to have some kind of motivation that drove that decision."
+                                "text": "There are 4 main layers to work through - imagine Bob Ross is guiding you:"
                             },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "font-weight: bold;",
+                                "text": "1. Get a general idea of what you want out of your character" 
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - Consider how do you want to approach combat. Spell casting, close-quarters combat, ranged approach, etc. " 
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - Consider your utilitarian purpose - do you want to provide insight to your team via history, arcane, and insightful knowledge? maybe you want to have strong physical prowess to reach difficult places with athletics or acrobatics? Perhaps persuade npcs to help you, or intimidate your enemies to stand down?" 
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - Consider your role-play. Do you want to be a wildchild born from the mountains and raised in the woods, a proud noble nurtured with a silver spoon, a roguish scamp raised in the streets, etc." 
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "font-weight: bold;",
+                                "text": "2. Select class, race, and background" 
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - (Optional) Ask the other players what characters they're planning on using - filling a missing role may help narrow down your choices." 
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - Again, think broad strokes. You can get lost in details, so try to look at them on a surface level." 
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - These need to compliment the general concept of your character. Each one of these aspects has deep details, such as equipment, traits, feats, skills, but don't worry about those for now." 
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - Each one of these aspects has deep details, such as equipment, traits, feats, skills, but don't worry about those for now, unless you want to." 
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "font-weight: bold;",
+                                "text": "3. Take a deeper dive into the specifics of your choices to get familiar with your character's mechanics." 
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - Classes usually have different specializations to branch into. See what your options are (or will be)" 
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - Races sometimes have interesting traits or actions, as do backgrounds"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - For now just take a look - don't write or record anything. A single pass of just reading will do a lot to give you an idea of what you're doing."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "font-weight: bold;",
+                                "text": "4. Fill out your character sheet." 
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - Roll your ability scores and select your skill proficiencies based on your class/race/background. Also write down your base health based on class."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - Write down your traits and feats - as you do so, try to understand what they do."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - Write down all of your equipment and starting money. Also, note down your tool proficiencies, known languages, and "
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - If your character is a spell caster, fill out the spell sheet."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - Level up your character to the DM's indicated starting level. Do this one at a time - each level you want to increase your health, see what your class bonuses are for that level, and add whatever spells are gained."
+                            }
                         ]
                     }
                 ]
@@ -77,7 +250,100 @@
     },
     {
         "id": 2,
-        "name": "Flaw",
+        "name": "1.0 - General Idea",
+        "children": [
+            
+            {
+                "type": "row",
+                "class": "",
+                "style": "",
+                "text": "",
+                "children": [
+                    {
+                        "type": "column",
+                        "class": "",
+                        "style": "text-align: start;",
+                        "text": "",
+                        "cols": "12",
+                        "children": [
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "This is the truly creative part of the whole process - a free-form exploration of a fantasy character that you'd be interested in being. You can come up with a whole history for your character, and even coordinate with your DM to have it fit into the plot in some way. Doing so introduces your own footprint into the world that you will be exploring." 
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Try to imagine your character's early childhood - where were they born? What we they hobbies? Was life hard, fun, boring, or somehow all of the above?" 
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "How did your character grow up? What did they do during those times? Did they have friends? Mentors? Pets? Did they fall in love or find passion in adventure?" 
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Who is your character now, given their life experiences? How did they end up here? If you're unsure where \"here\" is, ask your DM." 
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "If you've done all of the above, you have some semblance of an idea on how your character behaves and interacts with the world around them. If they're to get into a fight, how do they approach it? If faced with an obstacle or argument, how do they handle it?" 
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Once you've pondered a bit over the above questions, you're ready to move onto the next layer." 
+                            }
+                        
+                        ]
+                        
+                    }
+                ]
+            }
+        ]
+    },
+    
+    {
+        "id": 4,
+        "name": "2.0 - Selections",
         "children": [
             {
                 "type": "row",
@@ -96,7 +362,7 @@
                                 "type": "span",
                                 "class": "",
                                 "style": "",
-                                "text": "This module has a slightly different flaw system. During character creation, you are expected to come up with some kind of immediately evident flaw that will inspire prejudice from NPCs."
+                                "text": "In this layer, you want to pick the class, race, and background of the character. Given what you already know about your character's personality (everything), which class makes most sense for your character? Maybe your character's class is in conflict with their personality - perhaps you can find a race/background that serves to explain that contrast."
                             },
                             {
                                 "type": "newLine"
@@ -108,25 +374,7 @@
                                 "type": "span",
                                 "class": "",
                                 "style": "",
-                                "text": "This will serve two purposes:"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "1) You detract 1 point from an ability score, and add it to another. This re-allocation must make logical sense."
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "2) Your flaw will inspire some kind of prejudice-based reaction with any npc that you are talking to. "
+                                "text": "Play around with it and try to mix-and-match your class, race, and background. Don't look too deeply into the mechanical details of each one (unless you really want to min-max)."
                             },
                             {
                                 "type": "newLine"
@@ -138,332 +386,18 @@
                                 "type": "span",
                                 "class": "",
                                 "style": "",
-                                "text": "As mentioned, this flaw can be anything - medical, physical, social, etc. However, it needs to be something that manifests visually and be judgable prior to engaging in conversation."
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "font-weight: bold; font-size: 20px;",
-                                "text": "Examples:"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "font-weight: bold;",
-                                "text": "1) Old"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "Ability Score: +1 Wisdom (or Intelligence), -1 Strength (or Constitution)"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Older women, as well as younger women with daddy issues might get flirty"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Gentlefolk may be more respectful and considerate"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Warriors and people of power might see you as a frail has-been"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Youths may be dismissive and disrespectful"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "font-weight: bold;",
-                                "text": "2) Branded with eunuch a face tattoo. "
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "Ability Score: +1 Constitution, -1 Charisma"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Might invoke pity out of someone"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Might have a woman open up more easily because she isn't threatened by you as a man"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Might mocked or dismissed by masculine men"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Might be looked down upon by nobility"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "font-weight: bold;",
-                                "text": "3) Indent in head - left hand tremors "
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "Ability Score: +1 Strength, -1 Intelligence"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Wealthy folk may interpret your appearance and mannerisms as mentally unstable and treat you as a lunatic"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Warriors and criminals may be provoked by the hand twitching as a sign of wanting to fight."
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Children may find you silly-looking and fun to play with"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Medical folk may find your condition curious, and be more willing to converse with you. "
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "font-weight: bold;",
-                                "text": "4) Involuntary Humming"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "Ability Score: +1 Wisdom, -1 Charisma"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Inebriated and artistic people may be more welcoming"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Children are more open and at ease at your presence"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Children may find you silly-looking and fun to play with"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- May convey disrespect during ceremonious events."
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "font-weight: bold;",
-                                "text": "5) Missing an Eye"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "Ability Score: +1 Charisma, -1 Dexterity"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Children may get scared by your gruff and dangerous appearance"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Warriors may show respect due to battle scar"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Scarred/crippled people may have a sense of solidarity"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "- Women will be wary and try to avoid/escape interacting"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "You can also come up with your own flaw, and associated reallocations/interaction effects"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "newLine"
-                            },
-                            {
-                                "type": "span",
-                                "class": "",
-                                "style": "",
-                                "text": "Note: During conversation with an NPC, the flaw that takes effect is that of the player who initiated the conversation."
-                            },
+                                "text": "As you narrow down your options or make a final choice on your class/race/background, take note of it, and save the link for the page with the details - you will be referring to it later."
+                            }
                         ]
                     }
                 ]
             }
         ]
     },
+    
     {
-        "id": 3,
-        "name": "Class",
+        "id": 4,
+        "name": "2.1 - Class",
         "children": [
             {
                 "type": "row",
@@ -692,8 +626,8 @@
         ]
     },
     {
-        "id": 4,
-        "name": "Race",
+        "id": 5,
+        "name": "2.2 - Race",
         "children": [
             
             {
@@ -889,8 +823,8 @@
     },
     
     {
-        "id": 5,
-        "name": "Background",
+        "id": 6,
+        "name": "2.3 - Background",
         "children": [
             
             {
@@ -939,6 +873,380 @@
                                 "href": "https://5ebackgrounds.com/",
                                 "text": "here"
                             }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "3.0 - Explore your selections",
+        "children": [
+            
+            {
+                "type": "row",
+                "class": "",
+                "style": "",
+                "text": "",
+                "children": [
+                    {
+                        "type": "column",
+                        "class": "",
+                        "style": "text-align: start;",
+                        "text": "",
+                        "cols": "12",
+                        "children": [
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "By now you know your character. You know what they've been through, and you know what they've become. Now let's take a closer look at who they are, and what they might become in the future."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "In this layer, you want to revisit the class, race, and background that you selected in step 2, and see what comes with the territory. Each one has interesting unique benefits to it."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - Did you pick the Dragonborn race? Then it turns out that you have dragon breath as a weapon that you can use."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - Did you pick Sailor as your background? Then you have the Ship's passage feature, which may give you free passage by ship."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - Did you pick Paladin as your class? You have a plethora of features, skills, and actions that enable you to heal/buff you and your team, while fighting on the front-line."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "See what your character is capable of, and you'll also see what options will open up at later levels."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "4.0 - Solidifying your Character Sheet",
+        "children": [
+            
+            {
+                "type": "row",
+                "class": "",
+                "style": "",
+                "text": "",
+                "children": [
+                    {
+                        "type": "column",
+                        "class": "",
+                        "style": "text-align: start;",
+                        "text": "",
+                        "cols": "12",
+                        "children": [
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "In this layer, we simply write down all of the details that came with our selections. Normally, you're trying to do this while also trying to decide on your character's class/race/background, this part can become overwhelming. Luckily, if you've followed the previous layers, you don't need to worry anymore."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Note: despite the work you've done, this layer is pretty technical and not easy if you've never played D&D before. Feel free to reach out to your DM and have them help you - tell them the choices you've mad up until now, and they can help you fill this sheet out."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "This layer consists of several steps. We'll do them one by one so as not to overwhelm ourselves. The following is a sample character sheet for your reference. Don't panic, we'll fill it in piece by piece:"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "image",
+                                "source": "character-sheet.jpg",
+                                "height": "600",
+                                "contain": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "4.1 - Abilities and Skills",
+        "children": [
+            
+            {
+                "type": "row",
+                "class": "",
+                "style": "",
+                "text": "",
+                "children": [
+                    {
+                        "type": "column",
+                        "class": "",
+                        "style": "",
+                        "text": "",
+                        "cols": "12",
+                        "colsmd": "4",
+                        "colslg": "3",
+                        "children": [
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Let's start with the following section: "
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "image",
+                                "source": "character-sheet-abilities.jpg",
+                                "height": "600",
+                                "contain": true
+                            }
+                        ]
+                    },
+                    {
+                        "type": "column",
+                        "class": "",
+                        "style": "text-align: start;",
+                        "text": "",
+                        "cols": "12",
+                        "colsmd": "8",
+                        "colslg": "9",
+                        "children": [
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Christ, that's a lot. Let's simplify it."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "If we look at the Strength ability score in the screenshot on the left, we see two numbers: 16 and 3. The \"real\" number is 16. 3 is derived by the formula (s - 10) / 2. In other words, (16 - 10) / 2 = 3."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Translated into D&D jargon, 16 is the strength ability score, and 3 is the strength modifier"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "If you take a look at the other two sections, you'll notice that the modifiers are reflected there as well. Saving throws and Skills related to Strength will have a 3 beside them. This is coming from that strength ability modifier"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "You'll also notice that some saving throws and skills (the ones with the check marks) are higher than the ability modifier. This is because the character is \"proficient\" in those."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Where do proficiencies come from? Proficiency in saving throws comes from your class. Proficiency in skills comes from your class and background."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Where do the ability scores come from?"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - When you first create your character, your DM will tell you how to roll your initial ability scores"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - Your class has bonuses to ability score(s)"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - Certain level-up milestones will reward you with a couple of ability points that you can assign as you see fit"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Let's set up your character's ability scores and proficiencies. My (the author's) favorite method for character creation when I DM, is this:"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - roll 4d6k3 (4 rolls of 6-sided dice, keep 3 highest). Do this 6 times. If you don't get 2 results of 15 or higher, re-do all 6 rolls. Otherwise, assign your results to the desired abilities, and go to the next step."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": " - get the average of all your ability scores. If average is below 13, pick whichever ability you want, and reroll it using a 4d6k3. Keep doing this until you have an average of 13."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Now, increase your ability scores based on your race."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Mark the saving throw abilities that you're proficient in, as indicated in your class."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Mark the skill proficiencies based on your class and background."
+                            }
+
                         ]
                     }
                 ]
