@@ -1,6 +1,392 @@
 [ 
     
     {
+        "id": 2,
+        "name": "Flaw",
+        "children": [
+            {
+                "type": "row",
+                "class": "",
+                "style": "",
+                "text": "",
+                "children": [
+                    {
+                        "type": "column",
+                        "class": "",
+                        "style": "text-align: start;",
+                        "text": "",
+                        "cols": "12",
+                        "children": [
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "This module has a slightly different flaw system. During character creation, you are expected to come up with some kind of immediately evident flaw that will inspire prejudice from NPCs."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "This will serve two purposes:"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "1) You detract 1 point from an ability score, and add it to another. This re-allocation must make logical sense."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "2) Your flaw will inspire some kind of prejudice-based reaction with any npc that you are talking to. "
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "As mentioned, this flaw can be anything - medical, physical, social, etc. However, it needs to be something that manifests visually and be judgable prior to engaging in conversation."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "font-weight: bold; font-size: 20px;",
+                                "text": "Examples:"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "font-weight: bold;",
+                                "text": "1) Old"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Ability Score: +1 Wisdom (or Intelligence), -1 Strength (or Constitution)"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Older women, as well as younger women with daddy issues might get flirty"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Gentlefolk may be more respectful and considerate"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Warriors and people of power might see you as a frail has-been"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Youths may be dismissive and disrespectful"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "font-weight: bold;",
+                                "text": "2) Branded with eunuch a face tattoo. "
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Ability Score: +1 Constitution, -1 Charisma"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Might invoke pity out of someone"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Might have a woman open up more easily because she isn't threatened by you as a man"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Might mocked or dismissed by masculine men"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Might be looked down upon by nobility"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "font-weight: bold;",
+                                "text": "3) Indent in head - left hand tremors "
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Ability Score: +1 Strength, -1 Intelligence"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Wealthy folk may interpret your appearance and mannerisms as mentally unstable and treat you as a lunatic"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Warriors and criminals may be provoked by the hand twitching as a sign of wanting to fight."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Children may find you silly-looking and fun to play with"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Medical folk may find your condition curious, and be more willing to converse with you. "
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "font-weight: bold;",
+                                "text": "4) Involuntary Humming"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Ability Score: +1 Wisdom, -1 Charisma"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Inebriated and artistic people may be more welcoming"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Children are more open and at ease at your presence"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Children may find you silly-looking and fun to play with"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- May convey disrespect during ceremonious events."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "font-weight: bold;",
+                                "text": "5) Missing an Eye"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Ability Score: +1 Charisma, -1 Dexterity"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Children may get scared by your gruff and dangerous appearance"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Warriors may show respect due to battle scar"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Scarred/crippled people may have a sense of solidarity"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "- Women will be wary and try to avoid/escape interacting"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "You can also come up with your own flaw, and associated reallocations/interaction effects"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Note: During conversation with an NPC, the flaw that takes effect is that of the player who initiated the conversation."
+                            },
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": 3,
         "name": "Class",
         "children": [
