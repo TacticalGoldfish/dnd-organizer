@@ -983,6 +983,62 @@
     },
     {
         "id": 7,
+        "name": "Health",
+        "children": [
+            
+            {
+                "type": "row",
+                "class": "",
+                "style": "",
+                "text": "",
+                "children": [
+                    {
+                        "type": "column",
+                        "class": "",
+                        "style": "text-align: start;",
+                        "text": "",
+                        "cols": "12",
+                        "children": [
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Your starting health is as indicated for your "
+                            },
+                            {
+                                "type": "anchor",
+                                "targetModule": "cc",
+                                "targetId": "3",
+                                "class": "",
+                                "style": "",
+                                "text": "class"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Per level, you roll as indicated for your class. However, if your roll is equal to or lower than your CON modifier, re-roll it."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
         "name": "Equipment",
         "children": [
             
