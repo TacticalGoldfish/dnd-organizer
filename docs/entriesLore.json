@@ -1,0 +1,260 @@
+[
+    {
+        "id": 1,
+        "name": "World History",
+        "alias": "",
+        "children": [ 
+            
+            {
+                "type": "row",
+                "class": "",
+                "style": "",
+                "text": "",
+                "children": [
+                    {
+                        "type": "column",
+                        "class": "",
+                        "style": "text-align: start;",
+                        "text": "",
+                        "cols": "12",
+                        "children": [
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "The Sadal Kingdom has a long history dating back over 1300 years. Earliest known records recall a time of infancy, referring to Sedal as a small vassal state of the ancient empire of Ruhn. Much history has been lost to time, as Sadal has lost most records to various wars and civil uprisings over the many centuries. Despite its bloody history, it has reigned in peace for almost 400 years. "
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Regardless of its much debated origins, Sedal stands as the dominant power of the Egan continent, despite being land-locked by its neighbouring nations. To its Southwest, it shares a border with the elven nation of Eleath. To the North, it shares a border with the human kingdom of Rothar. Both of these nations, while powerful, have maintained friendly relations with Sedal via royal inter-marriage. When a Sedalian royal heir is born resembling a human, an Eleath royalty or nobility is married into the family. When a Sedalian royal is born resembling an elf, the same is done with Rothar. This accord has maintained a stable peace between the three nations for almost 6 centuries, and ensured that no other neighboring nations dare to encroach or offend."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "The Capital City of Sedal is "
+                            },
+                            {
+                                "type": "anchor",
+                                "targetModule": "m",
+                                "targetId": "1",
+                                "class": "",
+                                "style": "",
+                                "text": "Courtac"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": ", a stable center of the kingdom, the seat of power of the Royal family, the center of power for all of Sedal nobility, and home to 50,000 souls."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Recent History",
+        "alias": "",
+        "children": [ 
+            
+            {
+                "type": "row",
+                "class": "",
+                "style": "",
+                "text": "",
+                "children": [
+                    {
+                        "type": "column",
+                        "class": "",
+                        "style": "text-align: start;",
+                        "text": "",
+                        "cols": "12",
+                        "children": [
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "About 4 years ago, Sadal's Queen Valrieth Sageshadow passed away due to natural causes, at the young age of 243. This left King Graim Rutherford VII berieved and in mourning. This event put some strain with Sedal's Elven neighbour, but never escalated as far as is known to the public. The public sentiment remained that of sympathy, and Eleath royalty remained on friendly terms, initiating a 5-year political silence in respect of the late queen."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "In years since then, the King had not made any public appearences, and the kingdom has seen almost imperceivable changes to quality of life. Gradual increases in taxation, reduction of public servants, slow degradation in public services such as messengers and street cleaners, etc. However, quality of life remained mostly unaffected. Mostly. The population, to this day, remains sympathetic to the King's loss, and still fondly recall queen Valrieth and toast in her name."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Royal Guard Training Program",
+        "alias": "",
+        "children": [ 
+            
+            {
+                "type": "row",
+                "class": "",
+                "style": "",
+                "text": "",
+                "children": [
+                    {
+                        "type": "column",
+                        "class": "",
+                        "style": "text-align: start;",
+                        "text": "",
+                        "cols": "12",
+                        "children": [
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Three and a half years ago, Courtac's "
+                            },
+                            {
+                                "type": "anchor",
+                                "targetModule": "f",
+                                "targetId": "2",
+                                "class": "",
+                                "style": "",
+                                "text": "nobility"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": ", with the express approval of the king, launched the Royal Guard Training Program. This program was designed to identify and foster talented individuals that would otherwise go unnoticed due to social heirarchies. The ultimate goal was to bolster the ranks of the "
+                            },
+                            {
+                                "type": "anchor",
+                                "targetModule": "f",
+                                "targetId": "3",
+                                "class": "",
+                                "style": "",
+                                "text": "Royal Guard"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": ", as a large portion of veterans are due to retire in the coming years."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "The training program teaches literacy, etiquette, politics, mounted and hand-to-hand combat, magical theory, tactics and strategy, operation of advanced war machinery, and many other general studies as its core. However, it also transitions into raising unique talents and specializations, as the Royal Guard have many different branches of service, many of them being invisible to the public's eye."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Your Recent History",
+        "alias": "",
+        "children": [ 
+            
+            {
+                "type": "row",
+                "class": "",
+                "style": "",
+                "text": "",
+                "children": [
+                    {
+                        "type": "column",
+                        "class": "",
+                        "style": "text-align: start;",
+                        "text": "",
+                        "cols": "12",
+                        "children": [
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "About three years ago, your story came across "
+                            },
+                            {
+                                "type": "anchor",
+                                "targetModule": "c",
+                                "targetId": "1",
+                                "class": "",
+                                "style": "",
+                                "text": "Thergrum Deepstone"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": ", a member of dwarven nobility. Thergrum perceived potential in you, and through his recommendation you were admitted into the Royal Guard Training Program. Your training period ended a couple of months ago, and you were due for assessment to be admitted into the Royal Guard."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "However, upon arriving at the proving grounds, before you could demonstrate your skills, you and a few of your fellow trainees were singled out by an elf named Kelro Goldfate - assistant to the captain of the Royal Guard. \"The royal guard are the best of the best. We are the elite. The royal guard is perfect, and perfection cannot be flawed!\" - he pointed out a flaw in each of the trainees in question, and used is an excuse to disqualify you from consideration. Your group of misfits were cast out of the training program, and dismissed from having anything to do with the royal guard."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Having lost your shelter and livelihood, you and the other ex-cadets applied to the City Guard. You already had the necessary qualifications, and were admitted into a quick-start academy that fast-tracks you into the field. While in the academy, word of your history with the Royal Guard got out and spread among the City Guards, and upon completing your training a week ago, you were placed into a downtrodden department called RGR."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "Welcome to the Royal Guard Rejects department. "
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
