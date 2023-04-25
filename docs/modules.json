@@ -1,26 +1,33 @@
 [
     {
         "id": 1,
+        "title": "Lore",
+        "shortcut": "l",
+        "searchBar": true,
+        "entries": "entriesLore.json"
+    },
+    {
+        "id": 2,
         "title": "Characters",
         "shortcut": "c",
         "searchBar": true,
         "entries": "entriesCharacters.json"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Factions",
         "shortcut": "f",
         "searchBar": true,
         "entries": "entriesFactions.json"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Maps",
         "shortcut": "m",
         "entries": "entriesMaps.json"
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "Market",
         "shortcut": "t",
         "searchBar": true,
@@ -28,7 +35,7 @@
         "entries": "entriesMarket.json"
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "Character Creation",
         "shortcut": "cc",
         "hidden": false,

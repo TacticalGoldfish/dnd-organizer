@@ -2,6 +2,71 @@
     
     { 
         "id": 1,
+        "name": "Introduction",
+        "children": [
+            {
+                "type": "row",
+                "class": "",
+                "style": "",
+                "text": "",
+                "children": [
+                    {
+                        "type": "column",
+                        "class": "",
+                        "style": "text-align: start;",
+                        "text": "",
+                        "cols": "12",
+                        "children": [
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "What is this charactor creation section?"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "This section outlines the campaign-specific parameters for creating a character - class limitations, how to roll for your ability scores, what equipment to start with, etc."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "In other words, this section largely presumes that you have previously played D&D, and gives you the necessary details to create your own character without having to bother the DM."
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "newLine"
+                            },
+                            {
+                                "type": "span",
+                                "class": "",
+                                "style": "",
+                                "text": "If you have never played a D&D campaign, or never created a character sheet before, feel free to ask your DM for assistance."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    { 
+        "id": 2,
         "name": "Backstory",
         "children": [
             {
@@ -76,7 +141,7 @@
         ]
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "Flaw",
         "children": [
             {
@@ -468,7 +533,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "Class",
         "children": [
             {
@@ -698,7 +763,7 @@
         ]
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "Race",
         "children": [
             
@@ -895,7 +960,7 @@
     },
     
     {
-        "id": 5,
+        "id": 6,
         "name": "Background",
         "children": [
             
@@ -952,7 +1017,7 @@
         ]
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "Ability Score Rolls",
         "children": [
             
@@ -982,7 +1047,7 @@
         ]
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "Health",
         "children": [
             
@@ -1008,7 +1073,7 @@
                             {
                                 "type": "anchor",
                                 "targetModule": "cc",
-                                "targetId": "3",
+                                "targetId": "4",
                                 "class": "",
                                 "style": "",
                                 "text": "class"
@@ -1038,7 +1103,7 @@
         ]
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "Equipment",
         "children": [
             
