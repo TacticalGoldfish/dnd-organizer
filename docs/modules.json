@@ -1,5 +1,12 @@
 [
     {
+        "id": 6,
+        "title": "Lore",
+        "shortcut": "l",
+        "searchBar": true,
+        "entries": "entriesLore.json"
+    },
+    {
         "id": 1,
         "title": "Lore",
         "shortcut": "l",
